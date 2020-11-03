@@ -1,0 +1,705 @@
+{
+    "version": "d1.0",
+    "width": 1800,
+    "height": 1800,
+    "factions": [{
+            "name": "Republic",
+            "color": "#eb441a",
+            "capital": "Sol"
+        },
+        {
+            "name": "Syndicate",
+            "color": "#428af5",
+            "capital": "Achernar"
+        },
+        {
+            "name": "Free Worlds",
+            "color": "#6aa84f",
+            "capital": "Gamma Corvi"
+        },
+        {
+            "name": "Neutral",
+            "color": "#ffe599"
+        },
+        {
+            "name": "Independent",
+            "color": "#a64d79"
+        },
+        {
+            "name": "Pirate",
+            "color": "#590600"
+        }
+    ],
+    "galaxies": [{
+        "name": "MilkyWay",
+        "systems": [{
+                "name": "Sol",
+                "faction": "Republic",
+                "x": 50,
+                "y": -190
+            },
+            {
+                "name": "Alpha Centauri",
+                "faction": "Republic",
+                "x": -28,
+                "y": -109
+            },
+            {
+                "name": "Vega",
+                "faction": "Republic",
+                "x": 73,
+                "y": -65
+            },
+            {
+                "name": "Menkent",
+                "faction": "Republic",
+                "x": 57,
+                "y": 100
+            },
+            {
+                "name": "Arcturus",
+                "faction": "Republic",
+                "x": -84,
+                "y": 203
+            },
+            {
+                "name": "Porrima",
+                "faction": "Republic",
+                "x": -84,
+                "y": 17
+            },
+            {
+                "name": "Denebola",
+                "faction": "Republic",
+                "x": -108,
+                "y": -170
+            },
+            {
+                "name": "Sirius",
+                "faction": "Republic",
+                "x": 86,
+                "y": -317
+            },
+            {
+                "name": "Merak",
+                "faction": "Republic",
+                "x": -250,
+                "y": -73
+            },
+            {
+                "name": "Rutilicus",
+                "faction": "Republic",
+                "x": -40,
+                "y": 321
+            },
+            {
+                "name": "Cebalrai",
+                "faction": "Republic",
+                "x": 114,
+                "y": 268
+            },
+            {
+                "name": "Kaus Borealis",
+                "faction": "Republic",
+                "x": 155,
+                "y": 432
+            },
+            {
+                "name": "Vindemiatrix",
+                "faction": "Republic",
+                "x": -216,
+                "y": 159
+            },
+            {
+                "name": "Sarin",
+                "faction": "Republic",
+                "x": -208,
+                "y": 296
+            },
+            {
+                "name": "Muhilafain",
+                "faction": "Republic",
+                "x": -304,
+                "y": 54
+            },
+            {
+                "name": "Gacrux",
+                "faction": "Republic",
+                "x": -379,
+                "y": 207
+            },
+            {
+                "name": "Cor Caroli",
+                "faction": "Republic",
+                "x": -530,
+                "y": 114
+            },
+            {
+                "name": "Delta Velorum",
+                "faction": "Republic",
+                "x": -666,
+                "y": -10
+            },
+            {
+                "name": "Phecda",
+                "faction": "Republic",
+                "x": -421,
+                "y": -13
+            },
+            {
+                "name": "Alphard",
+                "faction": "Republic",
+                "x": -424,
+                "y": -124
+            },
+            {
+                "name": "Zozma",
+                "faction": "Republic",
+                "x": -585,
+                "y": -133
+            },
+            {
+                "name": "Gomeisa",
+                "faction": "Republic",
+                "x": -537,
+                "y": -266
+            },
+            {
+                "name": "Adhara",
+                "faction": "Republic",
+                "x": -688,
+                "y": -279
+            },
+            {
+                "name": "Epsilon Leonis",
+                "faction": "Republic",
+                "x": -588,
+                "y": -399
+            },
+            {
+                "name": "Regor",
+                "faction": "Republic",
+                "x": -755,
+                "y": -430
+            },
+            {
+                "name": "Avior",
+                "faction": "Republic",
+                "x": -633,
+                "y": -542
+            },
+            {
+                "name": "Markeb",
+                "faction": "Republic",
+                "x": -524,
+                "y": -635
+            },
+            {
+                "name": "Suhail",
+                "faction": "Republic",
+                "x": -749,
+                "y": -634
+            },
+            {
+                "name": "Wezen",
+                "faction": "Republic",
+                "x": -641,
+                "y": -751
+            },
+            {
+                "name": "Talita",
+                "faction": "Republic",
+                "x": -276,
+                "y": -210
+            },
+            {
+                "name": "Pollux",
+                "faction": "Republic",
+                "x": -118,
+                "y": -338
+            },
+            {
+                "name": "Castor",
+                "faction": "Republic",
+                "x": -283,
+                "y": -334
+            },
+            {
+                "name": "Capella",
+                "faction": "Republic",
+                "x": -242,
+                "y": -463
+            },
+            {
+                "name": "Aldebaran",
+                "faction": "Republic",
+                "x": 96,
+                "y": -475
+            },
+            {
+                "name": "Alhena",
+                "faction": "Republic",
+                "x": -57,
+                "y": -507
+            },
+            {
+                "name": "Canopus",
+                "faction": "Republic",
+                "x": -177,
+                "y": -613
+            },
+            {
+                "name": "Mebutsa",
+                "faction": "Republic",
+                "x": -231,
+                "y": -751
+            },
+            {
+                "name": "Alheka",
+                "faction": "Republic",
+                "x": 11,
+                "y": -683
+            },
+            {
+                "name": "Alnitak",
+                "faction": "Republic",
+                "x": -27,
+                "y": -832
+            },
+            {
+                "name": "Betelgeuse",
+                "faction": "Republic",
+                "x": 177,
+                "y": -776
+            },
+            {
+                "name": "Caph",
+                "faction": "Syndicate",
+                "x": 190,
+                "y": -191
+            },
+            {
+                "name": "Fomalhaut",
+                "faction": "Syndicate",
+                "x": 236,
+                "y": -11
+            },
+            {
+                "name": "Diphda",
+                "faction": "Syndicate",
+                "x": 344,
+                "y": -224
+            },
+            {
+                "name": "Markab",
+                "faction": "Syndicate",
+                "x": 410,
+                "y": -72
+            },
+            {
+                "name": "Aldermin",
+                "faction": "Syndicate",
+                "x": 392,
+                "y": 85
+            },
+            {
+                "name": "Alnair",
+                "faction": "Syndicate",
+                "x": 569,
+                "y": 83
+            },
+            {
+                "name": "Scheat",
+                "faction": "Syndicate",
+                "x": 597,
+                "y": -48
+            },
+            {
+                "name": "Schedar",
+                "faction": "Syndicate",
+                "x": 753,
+                "y": 19
+            },
+            {
+                "name": "Achernar",
+                "faction": "Syndicate",
+                "x": 508,
+                "y": -212
+            },
+            {
+                "name": "Polaris",
+                "faction": "Syndicate",
+                "x": 722,
+                "y": -199
+            },
+            {
+                "name": "Ruchbah",
+                "faction": "Syndicate",
+                "x": 524,
+                "y": -349
+            },
+            {
+                "name": "Sheratan",
+                "faction": "Syndicate",
+                "x": 728,
+                "y": -355
+            },
+            {
+                "name": "Zaurak",
+                "faction": "Syndicate",
+                "x": 632,
+                "y": -475
+            },
+            {
+                "name": "Algol",
+                "faction": "Syndicate",
+                "x": 296,
+                "y": -336
+            },
+            {
+                "name": "Menkar",
+                "faction": "Syndicate",
+                "x": 435,
+                "y": -480
+            },
+            {
+                "name": "Hamal",
+                "faction": "Syndicate",
+                "x": 265,
+                "y": -552
+            },
+            {
+                "name": "Bellatrix",
+                "faction": "Syndicate",
+                "x": 536,
+                "y": -612
+            },
+            {
+                "name": "Mirfak",
+                "faction": "Syndicate",
+                "x": 365,
+                "y": -736
+            },
+            {
+                "name": "Deneb",
+                "faction": "Nuetral",
+                "x": 231,
+                "y": 117
+            },
+            {
+                "name": "Men",
+                "faction": "Independent",
+                "x": -811,
+                "y": 772
+            },
+            {
+                "name": "Alcyone",
+                "faction": "Pirate",
+                "x": 691,
+                "y": -739
+            },
+            {
+                "name": "Gienah",
+                "faction": "Pirate",
+                "x": 589,
+                "y": 163
+            },
+            {
+                "name": "Algenib",
+                "faction": "Pirate",
+                "x": 761,
+                "y": 173
+            },
+            {
+                "name": "Shaula",
+                "faction": "Pirate",
+                "x": 9,
+                "y": 848
+            },
+            {
+                "name": "Rasalhague",
+                "faction": "Free Worlds",
+                "x": 301,
+                "y": 239
+            },
+            {
+                "name": "Ascella",
+                "faction": "Free Worlds",
+                "x": 365,
+                "y": 364
+            },
+            {
+                "name": "Alioth",
+                "faction": "Free Worlds",
+                "x": -223,
+                "y": 432
+            },
+            {
+                "name": "Alphecca",
+                "faction": "Free Worlds",
+                "x": -34,
+                "y": 456
+            },
+            {
+                "name": "Sargas",
+                "faction": "Free Worlds",
+                "x": 33,
+                "y": 563
+            },
+            {
+                "name": "Rastaban",
+                "faction": "Free Worlds",
+                "x": 216,
+                "y": 554
+            },
+            {
+                "name": "Delta Sagittarii",
+                "faction": "Free Worlds",
+                "x": 367,
+                "y": 621
+            },
+            {
+                "name": "Kaus Australis",
+                "faction": "Free Worlds",
+                "x": 484,
+                "y": 481
+            },
+            {
+                "name": "Dabih",
+                "faction": "Free Worlds",
+                "x": 656,
+                "y": 601
+            },
+            {
+                "name": "Tarazed",
+                "faction": "Free Worlds",
+                "x": 730,
+                "y": 742
+            },
+            {
+                "name": "Albadah",
+                "faction": "Free Worlds",
+                "x": 528,
+                "y": 735
+            },
+            {
+                "name": "Nunki",
+                "faction": "Free Worlds",
+                "x": 342,
+                "y": 816
+            },
+            {
+                "name": "Girtab",
+                "faction": "Free Worlds",
+                "x": 154,
+                "y": 728
+            },
+            {
+                "name": "Dschubba",
+                "faction": "Free Worlds",
+                "x": -65,
+                "y": 735
+            },
+            {
+                "name": "Han",
+                "faction": "Free Worlds",
+                "x": -270,
+                "y": 797
+            },
+            {
+                "name": "Kornephoros",
+                "faction": "Free Worlds",
+                "x": -133,
+                "y": 624
+            },
+            {
+                "name": "Aldhibain",
+                "faction": "Free Worlds",
+                "x": -328,
+                "y": 676
+            },
+            {
+                "name": "Alniyat",
+                "faction": "Free Worlds",
+                "x": -444,
+                "y": 785
+            },
+            {
+                "name": "Pherkad",
+                "faction": "Free Worlds",
+                "x": -624,
+                "y": 775
+            },
+            {
+                "name": "Kappa Centuari",
+                "faction": "Free Worlds",
+                "x": -726,
+                "y": 863
+            },
+            {
+                "name": "Yed Prior",
+                "faction": "Free Worlds",
+                "x": -711,
+                "y": 683
+            },
+            {
+                "name": "Unukalhai",
+                "faction": "Free Worlds",
+                "x": -399,
+                "y": 541
+            },
+            {
+                "name": "Sabik",
+                "faction": "Free Worlds",
+                "x": -479,
+                "y": 419
+            },
+            {
+                "name": "Zubeneschamali",
+                "faction": "Free Worlds",
+                "x": -604,
+                "y": 353
+            },
+            {
+                "name": "Kraz",
+                "faction": "Free Worlds",
+                "x": -765,
+                "y": 394
+            },
+            {
+                "name": "Gamma Corvi",
+                "faction": "Free Worlds",
+                "x": -823,
+                "y": 265
+            }
+        ],
+        "hyperlinks": [
+            ["Sol", "Alpha Centauri"],
+            ["Sol", "Vega"],
+            ["Sol", "Caph"],
+            ["Sol", "Denebola"],
+            ["Vega", "Menkent"],
+            ["Menkent", "Arcturus"],
+            ["Menkent", "Porrima"],
+            ["Vega", "Fomalhaut"],
+            ["Caph", "Fomalhaut"],
+            ["Sol", "Sirius"],
+            ["Caph", "Sirius"],
+            ["Denebola", "Merak"],
+            ["Porrima", "Merak"],
+            ["Arcturus", "Rutilicus"],
+            ["Rutilicus", "Cebalrai"],
+            ["Rutilicus", "Kaus Borealis"],
+            ["Cebalrai", "Kaus Borealis"],
+            ["Arcturus", "Vindemiatrix"],
+            ["Vindemiatrix", "Sarin"],
+            ["Vindemiatrix", "Muhilafain"],
+            ["Merak", "Muhilafain"],
+            ["Vindemiatrix", "Gacrux"],
+            ["Muhilafain", "Cor Caroli"],
+            ["Gacrux", "Cor Caroli"],
+            ["Cor Caroli", "Delta Velorum"],
+            ["Phecda", "Cor Caroli"],
+            ["Merak", "Alphard"],
+            ["Phecda", "Alphard"],
+            ["Delta Velorum", "Zozma"],
+            ["Alphard", "Zozma"],
+            ["Zozma", "Gomeisa"],
+            ["Gomeisa", "Adhara"],
+            ["Gomeisa", "Epsilon Leonis"],
+            ["Regor", "Epsilon Leonis"],
+            ["Epsilon Leonis", "Avior"],
+            ["Regor", "Avior"],
+            ["Avior", "Markeb"],
+            ["Avior", "Suhail"],
+            ["Avior", "Wezen"],
+            ["Alphard", "Talita"],
+            ["Talita", "Pollux"],
+            ["Sirius", "Pollux"],
+            ["Talita", "Castor"],
+            ["Castor", "Capella"],
+            ["Pollux", "Capella"],
+            ["Sirius", "Aldebaran"],
+            ["Capella", "Alhena"],
+            ["Aldebaran", "Alhena"],
+            ["Alhena", "Canopus"],
+            ["Canopus", "Mebutsa"],
+            ["Canopus", "Alheka"],
+            ["Alheka", "Alnitak"],
+            ["Alheka", "Betelgeuse"],
+            ["Cebalrai", "Rasalhague"],
+            ["Rasalhague", "Deneb"],
+            ["Menkent", "Deneb"],
+            ["Fomalhaut", "Deneb"],
+            ["Rasalhague", "Ascella"],
+            ["Caph", "Diphda"],
+            ["Diphda", "Markab"],
+            ["Fomalhaut", "Aldermin"],
+            ["Markab", "Aldermin"],
+            ["Aldermin", "Alnair"],
+            ["Alnair", "Scheat"],
+            ["Scheat", "Schedar"],
+            ["Diphda", "Achernar"],
+            ["Scheat", "Achernar"],
+            ["Achernar", "Polaris"],
+            ["Achernar", "Ruchbah"],
+            ["Ruchbah", "Sheratan"],
+            ["Ruchbah", "Zaurak"],
+            ["Sheratan", "Zaurak"],
+            ["Diphda", "Algol"],
+            ["Zaurak", "Menkar"],
+            ["Menkar", "Hamal"],
+            ["Menkar", "Bellatrix"],
+            ["Bellatrix", "Mirfak"],
+            ["Betelgeuse", "Mirfak"],
+            ["Bellatrix", "Alcyone"],
+            ["Alnair", "Gienah"],
+            ["Gienah", "Algenib"],
+            ["Sarin", "Alioth"],
+            ["Rutilicus", "Alioth"],
+            ["Alioth", "Alphecca"],
+            ["Alphecca", "Sargas"],
+            ["Sargas", "Rastaban"],
+            ["Kaus Borealis", "Rastaban"],
+            ["Rastaban", "Delta Sagittarii"],
+            ["Delta Sagittarii", "Kaus Australis"],
+            ["Ascella", "Kaus Australis"],
+            ["Delta Sagittarii", "Dabih"],
+            ["Kaus Australis", "Dabih"],
+            ["Dabih", "Tarazed"],
+            ["Tarazed", "Albadah"],
+            ["Albadah", "Nunki"],
+            ["Sargas", "Girtab"],
+            ["Rastaban", "Girtab"],
+            ["Albadah", "Girtab"],
+            ["Girtab", "Dschubba"],
+            ["Dschubba", "Han"],
+            ["Alphecca", "Kornephoros"],
+            ["Sargas", "Kornephoros"],
+            ["Dschubba", "Kornephoros"],
+            ["Kornephoros", "Aldhibain"],
+            ["Aldhibain", "Alniyat"],
+            ["Han", "Alniyat"],
+            ["Dschubba", "Shaula"],
+            ["Alniyat", "Pherkad"],
+            ["Pherkad", "Kappa Centuari"],
+            ["Pherkad", "Yed Prior"],
+            ["Pherkad", "Men"],
+            ["Kornephoros", "Unukalhai"],
+            ["Aldhibain", "Unukalhai"],
+            ["Unukalhai", "Sabik"],
+            ["Sabik", "Zubeneschamali"],
+            ["Kraz", "Zubeneschamali"],
+            ["Gamma Corvi", "Zubeneschamali"]
+        ]
+    }],
+
+
+    "galaxy": {
+        "name": "MilkyWay",
+        "factions": [],
+        "hyperlinks": [
+
+        ]
+    }
+}

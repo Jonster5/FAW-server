@@ -1,0 +1,24 @@
+{
+    "name": "faw",
+    "version": "0.0.1",
+    "description": "Factions At War",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Jonster5/FAW.git"
+    },
+    "author": "Coin Hunter",
+    "license": "SEE LICENSE IN LICENSE",
+    "bugs": {
+        "url": "https://github.com/Jonster5/FAW/issues"
+    },
+    "homepage": "https://github.com/Jonster5/FAW#readme",
+    "dependencies": {
+        "express": "^4.17.1",
+        "ws": "^7.3.1"
+    }
+}
