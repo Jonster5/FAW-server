@@ -692,14 +692,5 @@
             ["Kraz", "Zubeneschamali"],
             ["Gamma Corvi", "Zubeneschamali"]
         ]
-    }],
-
-
-    "galaxy": {
-        "name": "MilkyWay",
-        "factions": [],
-        "hyperlinks": [
-
-        ]
-    }
+    }]
 }
