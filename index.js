@@ -1,7 +1,12 @@
-const WebSocket = require('ws');
+const WebS = require('ws');
+const fs = require('fs');
 const port = process.env.PORT || 8000;
 
-let game = {};
+let WSS = new WebS.Server({ port });
+
+let game = {
+
+};
 
 let playerdata = {
     players: [],
@@ -34,13 +39,22 @@ let actions = {
             };
         }
     },
+    load_map: (ws, req) => {
+        let rawmap = fs.readFileSync(__dirname + '/map.json');
+        let map = JSON.parse(rawmap);
+
+        actions.return_obj = { frontend: 'test', frontend_params: [map], to: "all" }
+
+    },
     join_faction: (ws, req, faction) => {},
     test: (ws, req) => {
-        console.log(playerdata.players);
+        console.log(game);
     }
 };
 
-new WebSocket.Server({ port }).on('connection', (ws, req) => {
+
+
+WSS.on('connection', (ws, req) => {
     ws.on('message', (message) => {
         let data = JSON.parse(message);
 
@@ -48,24 +62,20 @@ new WebSocket.Server({ port }).on('connection', (ws, req) => {
 
         if (data.frontend) {
             if (actions.return_obj.to === 'all') {
-                new WebSocket.Server({ port }).clients.forEach((client) => {
-                    if (client.readyState === WebSocket.OPEN) {
-                        client.send(JSON.stringify(actions.return_obj));
-                        actions.return_obj = { frontend: '', frontend_params: [], to: '' };
-                    }
-                });
-            } else if (actions.return_obj.to === 'broadcast') {
-                new WebSocket.Server({ port }).clients.forEach((client) => {
-                    if (client !== ws && client.readyState === WebSocket.OPEN) {
-                        client.send(JSON.stringify(actions.return_obj));
-                        actions.return_obj = { frontend: '', frontend_params: [], to: '' };
-                    }
-                });
-            } else if (actions.return_obj.to === 'single') {
-                if (ws.readyState === WebSocket.OPEN) {
-                    ws.send(JSON.stringify(actions.return_obj));
-                    actions.return_obj = { frontend: '', frontend_params: [], to: '' };
+                for (let client of WSS.clients) {
+                    if (client.readyState !== WebS.OPEN) continue;
+                    client.send(JSON.stringify(actions.return_obj));
                 }
+                actions.return_obj = { frontend: '', frontend_params: [], to: '' };
+            } else if (actions.return_obj.to === 'broadcast') {
+                for (let client of WSS.clients) {
+                    if (client === ws || client.readyState !== WebS.OPEN) continue;
+                    client.send(JSON.stringify(actions.return_obj));
+                }
+                actions.return_obj = { frontend: '', frontend_params: [], to: '' };
+            } else if (actions.return_obj.to === 'single') {
+                if (ws.readyState === WebS.OPEN) ws.send(JSON.stringify(actions.return_obj));
+                actions.return_obj = { frontend: '', frontend_params: [], to: '' };
             }
         }
     });

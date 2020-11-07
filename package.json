@@ -19,6 +19,7 @@
     "homepage": "https://github.com/Jonster5/FAW#readme",
     "dependencies": {
         "express": "^4.17.1",
+        "fs": "0.0.1-security",
         "ws": "^7.3.1"
     },
     "devDependencies": {
